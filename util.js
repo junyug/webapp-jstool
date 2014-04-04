@@ -2,7 +2,7 @@
  * Created by kelly on 14-3-22
  * @description javascript tools
  * @author junyug
- * @verision 1.0.1
+ * @verision 1.0.0
  */
 ;"use strict";
 define(function(require, exports, module){
