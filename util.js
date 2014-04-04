@@ -1,5 +1,5 @@
 /**
- * Created by kelly on 14-3-22.
+ * Created by kelly on 14-3-22
  * @description javascript tools
  * @author junyug
  * @verision 1.0.0
