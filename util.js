@@ -136,35 +136,6 @@
         return str.replace(/\s*/gm,"");
     };
 
-    /**
-     * @name userDataStorage
-     * @description For local storage at less then IE8 browser
-     * @author junyug
-     * @verision 1.0.0
-     */
-    util.userDataStorage = function(maxage) {
-        var memory = document.createElement("div");
-        memory.style.display = 'none';
-        memory.style.behavior = 'url("#default#userData")';
-        document.body.appendChild(memory);
-        if (maxage) {
-          var now = new Date().getTime();
-          var expires = now + maxage * 1000;
-          memory.expires = new Date(expires).toUTCString();
-        }
-        memory.load("userDataStorage");
-        this.getItem = function (key) {
-          return memory.getAttribute(key) || null;
-        };
-        this.setItem = function (key, value) {
-          memory.setAttribute(key, value);
-          memory.save("userDataStorage");
-        };
-        this.removeItem = function (key) {
-          memory.removeAttribute(key);
-          memory.save("userDataStorage");
-        };
-    };
     util.name = "util.js";
     util.version = "1.0.1";
     util.length = (function () {
